@@ -1,0 +1,280 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: #e9edf2;
+    padding: 35px 15px;
+    color: #263238;
+}
+
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+
+.header {
+    background: #ffffff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 26px;
+    color: #263d59;
+}
+
+.subtitle {
+    color: #8793a2;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+
+.total-card {
+    background: #263d59;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.total-card h2 {
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.total-card span {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.form-section {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #42536a;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dce2e9;
+    border-radius: 7px;
+    font-size: 14px;
+    background: #f9fafc;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #4779b5;
+}
+
+
+#add-btn {
+    width: 100%;
+    padding: 13px;
+    background: #4779b5;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#add-btn:hover {
+    background: #345f94;
+}
+
+
+.list-section {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.list-header h3 {
+    font-size: 20px;
+    color: #263d59;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-group label {
+    font-size: 13px;
+    color: #657386;
+}
+
+.filter-group select {
+    padding: 8px;
+    border: 1px solid #dce2e9;
+    border-radius: 6px;
+    background: white;
+}
+
+
+.category-summary-section {
+    margin-bottom: 25px;
+}
+
+.category-summary-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #263d59;
+}
+
+.category-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.cat-card {
+    padding: 16px;
+    background: #f0f4f9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    border-bottom: 3px solid #4779b5;
+}
+
+.cat-title {
+    color: #68788d;
+    font-size: 13px;
+}
+
+.cat-amount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #263d59;
+}
+
+.cat-food {
+    border-color: #e49b50;
+}
+
+.cat-travel {
+    border-color: #4b9cbb;
+}
+
+.cat-shopping {
+    border-color: #9a79c5;
+}
+
+.cat-education {
+    border-color: #5b9b70;
+}
+
+.cat-other {
+    border-color: #888;
+}
+
+
+.expense-list {
+    list-style: none;
+}
+
+.expense-list li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f5f7fa;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+
+.empty-message {
+    text-align: center;
+    padding: 20px;
+    color: #98a2af;
+    font-size: 14px;
+}
+
+
+.delete-btn {
+    background: #e45c5c;
+    color: white;
+    padding: 7px 11px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c94444;
+}
+
+
+@media (max-width: 550px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .category-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .list-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}

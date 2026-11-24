@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Student Expense Tracker</h1>
+      <p class="subtitle">Manage your daily spending easily</p>
+    </header>
+
+    <section class="total-card">
+      <h2>Total Expenses: <span id="total-amount">$0.00</span></h2>
+    </section>
+
+
+  
+    <section class="form-section">
+      <form id="expense-form">
+        <div class="form-group">
+          <label for="expense-name">Expense Name</label>
+          <input type="text" id="expense-name" placeholder="e.g., Notebook">
+        </div>
+        <div class="form-group">
+          <label for="expense-amount">Amount ($)</label>
+          <input type="number" id="expense-amount" placeholder="e.g., 10" step="0.01" min="0">
+        </div>
+        <div class="form-group">
+          <label for="expense-category">Category</label>
+          <select id="expense-category">
+            <option value="Food">Food</option>
+            <option value="Travel">Travel</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Education">Education</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <button type="submit" id="add-btn">Add Expense</button>
+      </form>
+    </section>
+
+   
+    <section class="list-section">
+      <div class="list-header">
+        <h3>Expenses</h3>
+        <div class="filter-group">
+          <label for="filter-category">Filter:</label>
+          <select id="filter-category">
+            <option value="All">All Categories</option>
+            <option value="Food">Food</option>
+            <option value="Travel">Travel</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Education">Education</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div> 
+    <section class="category-summary-section">
+      <h3>Expenses by Category</h3>
+      <div class="category-cards">
+        <div class="cat-card cat-food">
+          <span class="cat-title">Food</span>
+          <span class="cat-amount" id="total-food">$0.00</span>
+        </div>
+        <div class="cat-card cat-travel">
+          <span class="cat-title">Travel</span>
+          <span class="cat-amount" id="total-travel">$0.00</span>
+        </div>
+        <div class="cat-card cat-shopping">
+          <span class="cat-title">Shopping</span>
+          <span class="cat-amount" id="total-shopping">$0.00</span>
+        </div>
+        <div class="cat-card cat-education">
+          <span class="cat-title">Education</span>
+          <span class="cat-amount" id="total-education">$0.00</span>
+        </div>
+        <div class="cat-card cat-other">
+          <span class="cat-title">Other</span>
+          <span class="cat-amount" id="total-other">$0.00</span>
+        </div>
+      </div>
+    </section>
+
+
+      <ul id="expense-list" class="expense-list"></ul>
+      <p id="empty-message" class="empty-message">No expenses added yet.</p>
+    </section>
+  
+
+  </div>
+
+</body>
+</html>
